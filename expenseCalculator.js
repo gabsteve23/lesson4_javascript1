@@ -43,10 +43,10 @@
                   var householdAmt = document.getElementById("householdInput").value;
                   
                   
-                  var transportAmt = document.getElementById("transportInput").value;
+                  var transportationAmt = document.getElementById("transportationInput").value;
                   
                   
-                  var kidsAmt = document.getElementById("kidsInput").value;
+                  var miscellaneousAmt = document.getElementById("miscellaneousInput").value;
                   
                   
 
@@ -72,9 +72,9 @@
                   
                   householdAmt = parseFloat(householdAmt);
                   
-                  transportAmt = parseFloat(transportAmt);
+                  transportationAmt = parseFloat(transportationAmt);
                   
-                  kidsAmt = parseFloat(kidsAmt);
+                  miscellaneousAmt = parseFloat(miscellaneousAmt);
 
 
 
@@ -100,9 +100,9 @@
                   
                   var householdPct; //House category percentage
                   
-                  var transportPct; //Transportation category percentage
+                  var transportationPct; //Transportation category percentage
                   
-                  var kidsPct; //Kids category percentage
+                  var miscellaneousPct; //Kids category percentage
 
 
 
@@ -129,7 +129,7 @@
                    *          variables declared in Task 4.  
                   *******************************************************************************************************/   
 
-                  totalExpenses = shelterAmt + foodAmt + householdAmt + transportAmt + kidsAmt;    
+                  totalExpenses = shelterAmt + foodAmt + householdAmt + transportationAmt + miscellaneousAmt;    
                     
                   shelterPct = 100 * (shelterAmt / totalExpenses);
                   
@@ -137,9 +137,9 @@
                   
                   householdPct = 100 * (householdAmt / totalExpenses);
                   
-                  transportPct = 100 * (transportAmt / totalExpenses);
+                  transportationPct = 100 * (transportationAmt / totalExpenses);
                   
-                  kidsPct = 100 * (kidsAmt / totalExpenses);
+                  miscellaneousPct = 100 * (miscellaneousAmt / totalExpenses);
 
                   /******************************************************************************************************
                    * Task 6:  Add the additional code needed to display the total expenses and the percentages for each 
@@ -170,9 +170,9 @@
                   
                   document.getElementById("householdPercentage").innerHTML = "% for <b>household:</b>   " + householdPct.toFixed(1);
                   
-                  document.getElementById("transportPercentage").innerHTML = "% for <b>transport:</b>   "+ transportPct.toFixed(1);
+                  document.getElementById("transportationPercentage").innerHTML = "% for <b>transportation:</b>   "+ transportationPct.toFixed(1);
                   
-                  document.getElementById("kidsPercentage").innerHTML = "% for <b>kids:</b>         " + kidsPct.toFixed(1);
+                  document.getElementById("miscellaneousPercentage").innerHTML = "% for <b>miscellaneous:</b>         " + miscellaneousPct.toFixed(1);
 
          } //end of calculatePercentages function
          
@@ -213,9 +213,9 @@
                   
                   document.getElementById("householdPercentage").innerHTML = "";
                   
-                  document.getElementById("transportPercentage").innerHTML = "";
+                  document.getElementById("transportationPercentage").innerHTML = "";
                   
-                  document.getElementById("kidsPercentage").innerHTML = "";
+                  document.getElementById("miscellaneousPercentage").innerHTML = "";
 
 
               
