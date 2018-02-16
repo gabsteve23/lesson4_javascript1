@@ -4,22 +4,21 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+(02 16, 2018)
 
 ### Student Name:  
-(First and Last Name)
+(Gabriel Gomez)
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+(This assignment was designated to create a functioning calculator to find expenses)
 
 ### View Project:
-(Replace this statement with your GitHub Page URL that was created when you 
- published the project.)
+https://gabsteve23.github.io/lesson4_javascript1/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. One concept I learned from this assignment was get element by ID and how to use them properly
+2. Another lesson which I learned from this assignment was how to state variables in order to find percentages 
+3. A final lesson that I learned from this assignment was how to properly account for changes made in a CSS and translate those to java code
 
 
 

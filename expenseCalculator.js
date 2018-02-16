@@ -1,8 +1,8 @@
         /************************************************************************************************ 
           Course:  Web Application Development
           Assignment:  Lesson 4 (JavaScript 1)
-          Author:  
-          Date:   
+          Author:  Gabriel Gomez
+          Date:   2-13-18
           Filename: expenseCalculator.js
         *************************************************************************************************/
      
@@ -35,10 +35,20 @@
                   **************************************************************************************************/
 
                   var shelterAmt = document.getElementById("shelterInput").value;
+                  
+                  
                   var foodAmt = document.getElementById("foodInput").value;
-
-
-
+                  
+                  
+                  var householdAmt = document.getElementById("householdInput").value;
+                  
+                  
+                  var transportAmt = document.getElementById("transportInput").value;
+                  
+                  
+                  var kidsAmt = document.getElementById("kidsInput").value;
+                  
+                  
 
                   /*************************************************************************************************
                    * Task 3:  Add the additional code needed that will convert the user's inputs, which are Strings 
@@ -57,8 +67,14 @@
                   **************************************************************************************************/  
 
                   shelterAmt = parseFloat(shelterAmt);
+                  
                   foodAmt = parseFloat(foodAmt);
-
+                  
+                  householdAmt = parseFloat(householdAmt);
+                  
+                  transportAmt = parseFloat(transportAmt);
+                  
+                  kidsAmt = parseFloat(kidsAmt);
 
 
 
@@ -77,9 +93,16 @@
                   *******************************************************************************************************/              
 
                   var totalExpenses; //total expenses for the user
+                  
                   var shelterPct; //shelter category percentage
+                  
                   var foodPct;  //food category percentage
-
+                  
+                  var householdPct; //House category percentage
+                  
+                  var transportPct; //Transportation category percentage
+                  
+                  var kidsPct; //Kids category percentage
 
 
 
@@ -106,10 +129,17 @@
                    *          variables declared in Task 4.  
                   *******************************************************************************************************/   
 
-
+                  totalExpenses = shelterAmt + foodAmt + householdAmt + transportAmt + kidsAmt;    
+                    
                   shelterPct = 100 * (shelterAmt / totalExpenses);
+                  
                   foodPct = 100 * (foodAmt / totalExpenses);
-
+                  
+                  householdPct = 100 * (householdAmt / totalExpenses);
+                  
+                  transportPct = 100 * (transportAmt / totalExpenses);
+                  
+                  kidsPct = 100 * (kidsAmt / totalExpenses);
 
                   /******************************************************************************************************
                    * Task 6:  Add the additional code needed to display the total expenses and the percentages for each 
@@ -133,9 +163,16 @@
                   *******************************************************************************************************/  
 
                   document.getElementById("totalExpenses").innerHTML = "<b>Total Expenses:     $</b> " + totalExpenses.toFixed(2);
-                  document.getElementById("shelterPercentage").innerHTML = "% for <b>shelter</b>:      " + shelterPct.toFixed(1);      
+                  
+                  document.getElementById("shelterPercentage").innerHTML = "% for <b>shelter</b>:      " + shelterPct.toFixed(1);   
+                  
                   document.getElementById("foodPercentage").innerHTML = "% for <b>food:</b>      " + foodPct.toFixed(1);
-
+                  
+                  document.getElementById("householdPercentage").innerHTML = "% for <b>household:</b>   " + householdPct.toFixed(1);
+                  
+                  document.getElementById("transportPercentage").innerHTML = "% for <b>transport:</b>   "+ transportPct.toFixed(1);
+                  
+                  document.getElementById("kidsPercentage").innerHTML = "% for <b>kids:</b>         " + kidsPct.toFixed(1);
 
          } //end of calculatePercentages function
          
@@ -168,9 +205,17 @@
 
                   *************************************************************************************************************/                
 
-                  document.getElementById("totalExpenses").innerHTML = ""; 
-                  document.getElementById("shelterPercentage").innerHTML = "";      
+                  document.getElementById("totalExpenses").innerHTML = "";
+                  
+                  document.getElementById("shelterPercentage").innerHTML = "";  
+                  
                   document.getElementById("foodPercentage").innerHTML  = "";
+                  
+                  document.getElementById("householdPercentage").innerHTML = "";
+                  
+                  document.getElementById("transportPercentage").innerHTML = "";
+                  
+                  document.getElementById("kidsPercentage").innerHTML = "";
 
 
               
